@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/cat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cat name "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/image"
+        android:paddingTop="10dp"
+        android:textSize="40dp"
+        android:id="@+id/tv_catName"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cat origin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_catName"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_below="@id/tv_catName"
+        android:paddingTop="10dp"
+        android:textStyle="italic"
+        android:id="@+id/tv_catOrigin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Life Span (years) :"
+        android:layout_below="@id/tv_catOrigin"
+        android:paddingStart="100dp"
+        android:paddingTop="20dp"
+        android:id="@+id/lifeSpanText"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10-12 years"
+        android:id="@+id/tv_lifeSpan"
+        android:layout_below="@id/tv_catOrigin"
+        android:layout_toEndOf="@+id/lifeSpanText"
+        android:paddingTop="20dp"
+        android:paddingStart="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight:"
+            android:layout_below="@id/lifeSpanText"
+            android:paddingStart="100dp"
+            android:paddingTop="20dp"
+            android:id="@+id/weightText"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginStart="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7-10"
+            android:id="@+id/tv_weight"
+            android:layout_below="@id/lifeSpanText"
+            android:layout_toEndOf="@+id/weightText"
+            android:paddingTop="20dp"
+            android:paddingStart="5dp"
+            android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_description"
+        android:text="Bengals are a lot of fun to live with, but they're definitely not the cat for everyone, or for first-time cat owners. Extremely intelligent, curious and active, they demand a lot of interaction and woe betide the owner who doesn't provide it."
+        android:layout_below="@id/weightText"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="25dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/temperamentText"
+        android:layout_below="@id/tv_description"
+        android:text="temperament: "
+        android:paddingTop="20dp"
+        android:paddingStart="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_temperament"
+        android:text="Alert, Agile, Energetic, Demanding, Intelligent"
+        android:layout_below="@id/tv_description"
+        android:layout_toEndOf="@id/temperamentText"
+        android:paddingTop="20dp"
+        android:paddingStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_url"
+        android:text="https://en.wikipedia.org/wiki/Bengal_(cat)"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/temperamentText"
+        android:paddingTop="20dp"
+        android:layout_below="@id/temperamentText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dogFriendlinessText"
+        android:text="Dog Friendliness: "
+        android:layout_below="@id/tv_url"
+        android:paddingTop="20dp"
+        android:paddingStart="100dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dogFriendlinessLevel"
+        android:text="10"
+        android:layout_below="@id/tv_url"
+        android:layout_toEndOf="@id/dogFriendlinessText"
+        android:paddingTop="20dp"
+        android:paddingStart="5dp"/>
+
+        <ImageView
+            android:id="@+id/addToFav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/dogFriendlinessText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="-328dp"
+            android:layout_toEndOf="@id/tv_catOrigin"
+            android:src="@drawable/ic_fav" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

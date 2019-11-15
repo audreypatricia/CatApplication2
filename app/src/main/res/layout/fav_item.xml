@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_marginBottom="4dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp" >
+
+        <ImageView
+            android:id="@+id/catImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="2dp"
+            app:srcCompat="@drawable/cat"/>
+
+        <TextView
+            android:id="@+id/tv_nameOfCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cat name"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/catImage"/>
+
+        <TextView
+            android:id="@+id/tv_originOfCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="origin"
+            android:textSize="15sp"
+            android:layout_below="@id/tv_nameOfCat"
+            android:layout_toEndOf="@+id/catImage"
+            android:layout_marginStart="8dp"/>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_originOfCat"
+            android:layout_toEndOf="@id/catImage"
+            android:src="@drawable/ic_delete" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

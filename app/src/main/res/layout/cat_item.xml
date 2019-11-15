@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_marginBottom="4dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp" >
+
+        <ImageView
+            android:id="@+id/catImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="2dp"
+            app:srcCompat="@drawable/cat"/>
+
+        <TextView
+            android:id="@+id/tv_catName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cat name"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/catImage"/>
+
+        <TextView
+            android:id="@+id/tv_catOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="origin"
+            android:textSize="15sp"
+            android:layout_below="@id/tv_catName"
+            android:layout_toEndOf="@+id/catImage"
+            android:layout_marginStart="8dp"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginStart="186dp"-->
+<!--            android:layout_toEndOf="@id/tv_catOrigin"-->
+<!--            android:src="@drawable/ic_fav"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:id="@+id/addToFav"/>-->
+
+<!--        <TextView-->
+<!--            andro1id:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/infoText"-->
+<!--            android:text="click on cat to see details and add to favourite"-->
+<!--            android:layout_below="@id/tv_catOrigin"-->
+<!--            android:layout_toEndOf="@id/catImage"-->
+<!--            android:textStyle="italic"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:textSize="12dp"/>-->
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
